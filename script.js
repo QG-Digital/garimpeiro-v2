@@ -16,7 +16,7 @@ function iniciarDownload() {
     simularProgressoDownload();
     
     // Para um download real, descomente a linha abaixo:
-    // window.location.href = 'URL_DO_SEU_ARQUIVO_AQUI';
+    window.location.href = 'https://github.com/QG-Digital/garimpeiro-v2/releases/download/Software/Instalador_Mineiro_de_Dados.exe';
 }
 
 /**
