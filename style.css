@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 /* =========================================================================
    VARIÁVEIS DE TEMA
    ========================================================================= */
 :root {
-    --color-primary: #101f4d;
-    --color-primary-light: #1a2d63;
+    --color-primary: #0d1b3e;
+    --color-primary-light: #162d5e;
     --color-accent: #fa8700;
-    --color-accent-dark: #e67a00;
-    --color-background: #f8f9fa;
+    --color-accent-dark: #d97000;
+    --color-background: #F7F8FC;
     --color-card-bg: #ffffff;
-    --color-text: #212529;
+    --color-text: #0d1b3e;
     --color-secondary-text: #6c757d;
     --color-danger: #dc3545;
     --color-success: #3cb371;
@@ -34,8 +35,8 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #F7F8FC 0%, #E8ECF4 100%);
     color: var(--color-text);
     line-height: 1.6;
     min-height: 100vh;
@@ -235,7 +236,7 @@ header h1 {
 }
 
 .version-info {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, #F7F8FC 0%, #E8ECF4 100%);
     padding: 20px;
     border-radius: 8px;
     margin: 25px 0;
@@ -294,7 +295,7 @@ header h1 {
 }
 
 .btn-download:hover {
-    background: linear-gradient(135deg, var(--color-accent-dark) 0%, #d96d00 100%);
+    background: linear-gradient(135deg, var(--color-accent-dark) 0%, #c46a00 100%);
     box-shadow: 0 4px 8px rgba(250, 135, 0, 0.4);
     transform: translateY(-2px);
 }
@@ -312,13 +313,13 @@ header h1 {
 }
 
 .btn-secondary {
-    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+    background: linear-gradient(135deg, #E8ECF4 0%, #E8ECF4 100%);
     color: var(--color-text);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn-secondary:hover {
-    background: linear-gradient(135deg, #dee2e6 0%, #ced4da 100%);
+    background: linear-gradient(135deg, #E8ECF4 0%, #ced4da 100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
 }
@@ -386,15 +387,15 @@ header h1 {
 }
 
 .comparison-table tbody tr {
-    border-bottom: 1px solid #e9ecef;
+    border-bottom: 1px solid #E8ECF4;
 }
 
 .comparison-table tbody tr:nth-child(even) {
-    background-color: #f8f9fa;
+    background-color: #F7F8FC;
 }
 
 .comparison-table tbody tr:hover {
-    background-color: #e9ecef;
+    background-color: #E8ECF4;
 }
 
 .comparison-table td {
@@ -615,7 +616,7 @@ footer {
 }
 
 .progress-bar-container {
-    background: #e9ecef;
+    background: #E8ECF4;
     border-radius: 10px;
     height: 20px;
     margin-bottom: 15px;
@@ -689,3 +690,9 @@ footer {
     box-shadow: 0 4px 8px rgba(37, 211, 102, 0.4);
     transform: translateY(-2px);
 }
+
+/* polimento (padrão visual LocalInsta nas cores da QG) */
+.btn,.btn-download,.btn-manual{border-radius:12px;transition:transform .2s ease,box-shadow .2s ease}
+.btn:hover,.btn-download:hover,.btn-manual:hover{transform:translateY(-2px)}
+.info-card,.download-card,.support-card,.card-icon{border-radius:16px}
+.info-card,.download-card,.support-card{border:1px solid #E8ECF4;box-shadow:0 12px 32px -20px rgba(13,27,62,.35)}
